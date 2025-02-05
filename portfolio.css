@@ -1,268 +1,486 @@
 body {
-        font-family: inter, sans-serif;
-        background-color: #f8f9fa;
-        overflow: hidden;
-      }
-      .sidebar {
-        background-color: #0c1b2d;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        height: 100vh;
-        position: fixed;
-        width: 25%;
-        overflow: hidden;
-      }
-      .sidebar img {
-        width: 230px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-      }
-      .sidebar a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        margin: 10px 0;
-        cursor: pointer;
-      }
-      .main-content {
-        background-color: white;
-        /* padding: 30px; */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        margin-left: 25%;
-        height: 100vh;
-        overflow-y: auto;
-        scroll-behavior: smooth;
-        padding: 0px !important;
-      }
-      .hero-section {
-        /* background: linear-gradient(
+  font-family: inter, sans-serif;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  font-size: 67.5%;
+}
+
+.sidebar {
+  background-color: #0c1b2d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  width: 25%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.sidebar img {
+  width: 230px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.main-content {
+  background-color: white;
+  /* padding: 30px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 25%;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 0px !important;
+}
+
+.hero-section {
+  /* background: linear-gradient(
             
             rgba(12, 27, 45, 0.7),
             rgba(12, 27, 45, 0.7)
           ),
           url("assets/R.jpeg"); */
-        background: linear-gradient(0deg, #666363, #666363),linear-gradient(0deg, #000000, #000000);
-        opacity: 50%;
-        background-image: url("assets/R.jpeg");
-        background-size: cover;
-        background-position: center;
-        /* background-blend-mode: multiply; */
-        color: white;
-        text-align: center;
-        padding: 80px 20px;
-      }
-      .hero-section h2 {
-          font-size: 24px;
-          margin-bottom: 10px;
-        }
-        .hero-section h3 {
-        margin: 10px 0px;
-        font-size: 32px;
-        font-weight: bold;
-      }
-      .hero-section h5 {
-        font-size: 20px;
-        margin-top: 5px;
-      }
-      .summary-section {
-            position: relative;
-            background-color: #DADADA;
-            padding: 50px;
-            text-align: center;
-        }
-        .summary-section h1 {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 100px;
-            font-weight: bold;
-            color: #E3E3E3;
-            z-index: 0;
-        }
-        .summary-content {
-            position: relative;
-            z-index: 1;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 40px;
-        }
-        .summary-left {
-            width: 70%;
-            text-align: left;
-        }
-        .summary-left p {
-            margin-bottom: 0px;
-        }
-        .summary-section h2 {
-            position: relative;
-            z-index: 1;
-            font-size: 28px;
-            letter-spacing: 3px;
-        }
-        .summary-section h2 span, .certifications h4 span, .skills h4 {
-            text-decoration: underline;
-            text-decoration-thickness: 3px; 
-            text-decoration-color: #0c1b2d; 
-            text-underline-offset: 8px; 
-        }
-        .summary-right {
-            padding-left: 12px;
-            width: 35%;
-            text-align: left;
-        }
-        .summary-right p {
-            border-bottom: 1px solid #fff;
-            border-radius: 10px;
-            padding: 8px 8px;
-        }
-        .btn-dark {
-            background-color: #0c1b2d;
-            border: none;
-            border-radius: 24px;
-            padding: 12px 24px;
-            font-size: 20px;
-        }
+  background: linear-gradient(0deg, #666363, #666363), linear-gradient(0deg, #000000, #000000);
+  opacity: 50%;
+  background-image: url("assets/R.jpeg");
+  background-size: cover;
+  background-position: center;
+  /* background-blend-mode: multiply; */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
 
-        .experience-card {
-        /* background: #f0f0f0; */
-        border-radius: 12px;
-        padding: 15px;
-        /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); */
-        display: flex;
-        align-items: center;
-      }
+.hero-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
-      .icon-container {
-        width: 110px;
-        height: 110px;
-        background-color:#DADADA;
-        border-radius: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 15px;
-      }
+.hero-section h3 {
+  margin: 10px 0px;
+  font-size: 32px;
+  font-weight: bold;
+}
 
-      .icon-container img {
-        width: 80px;
-      }
+.hero-section h5 {
+  font-size: 20px;
+  margin-top: 5px;
+}
 
-      .content {
-        text-align: left;
-    }
+.summary-section {
+  position: relative;
+  background-color: #DADADA;
+  padding: 50px;
+  text-align: center;
+}
 
-      .content h5 {
-        margin: 0;
-        font-size: 18px;
-        font-weight: bold;
-      }
+.summary-section h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 100px;
+  font-weight: bold;
+  color: #E3E3E3;
+  z-index: 0;
+}
 
-      .content p {
-        margin: 2px 0;
-        font-size: 14px;
-        color: #555;
-      }
-      .education-card {
-        border-radius: 12px;
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        border: 1px solid #000;
-      }
-      .education-card .icon-container {
-          background-color: #E4E4E4;
-      }
-      .icon-box {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-      }
-      .icon-box i {
-        font-size: 24px;
-        color: #0c1b2d;
-      }
-      .certifications_skills {
-        background-color: #DADADA;
-        justify-content: space-between;
-      }
-      .certifications,.skills{
-            text-align: left !important;
-            padding: 25px 0px;
-            background: #E4E4E4;
-            width: 48%;
-        }
-      ul {
-        margin-left: 15px;
-      }
+.summary-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+}
 
-      li {
-        font-size: 20px;
-       font-family: inter;
-        line-height: 40px;
-      }
-      footer {
-        background-color: #DADADA;
-        text-align: center;
-      }
-      .nav a {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 20px;
-        color: #9E9E9E;
-        margin: 0px 0px;
-      }
-      .nav-link.active {
-            color: #94F4FF !important;
-            font-weight: 600;
-            background-color: unset !important;
-        }
-        .nav-link:hover {
-            color: unset !important;
-            font-weight: 600;
-        }
+.summary-left {
+  width: 70%;
+  text-align: left;
+}
 
-        .close-btn {
-            border: none;
-            color: #010B29;
-            font-size: 1.5rem;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            display: none;
-            background-color: #fff;
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-        }
-        .sidebarToggle {
-            position: absolute;
-            width: unset;
-            background-color: #010B29;
-            border: 0px;
-            color: white;
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            z-index: 20;
-            top: 10px;
-            left: 10px;
-        }
-        @media (max-width: 768px) {
-        .sidebar {
-          width: 90%;
-          transform: translateX(-100%);
-          z-index: 25;
-        }
-        .sidebar.show {
-          transform: translateX(0);
-        }
-        .main-content {
-          margin-left: 0;
-        }
-        .close-btn {
-          display: block;
-        }
-      }
+.summary-left p {
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.summary-section h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.summary-section h2 span,
+.certifications h4 span,
+.skills h4 {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #0c1b2d;
+  text-underline-offset: 8px;
+}
+
+.summary-right {
+  padding-left: 12px;
+  width: 35%;
+  text-align: left;
+}
+
+.summary-right p {
+  font-size: 16px;
+  border-bottom: 1px solid #fff;
+  border-radius: 10px;
+  padding: 8px 8px;
+}
+
+.btn-dark {
+  background-color: #0c1b2d;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-size: 20px;
+}
+
+.experience-card {
+  /* background: #f0f0f0; */
+  border-radius: 12px;
+  padding: 15px;
+  /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  width: 110px;
+  height: 110px;
+  background-color: #DADADA;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.icon-container img {
+  width: 80px;
+}
+
+.content {
+  text-align: left;
+}
+
+.content h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.education-card {
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.education-card .icon-container {
+  background-color: #E4E4E4;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-box i {
+  font-size: 24px;
+  color: #0c1b2d;
+}
+
+.certifications_skills {
+  background-color: #DADADA;
+  justify-content: space-between;
+}
+
+.certifications,
+.skills {
+  text-align: left !important;
+  padding: 25px 0px;
+  background: #E4E4E4;
+  width: 48%;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+li {
+  font-size: 20px;
+  font-family: inter;
+  line-height: 40px;
+}
+
+footer {
+  background-color: #DADADA;
+  text-align: center;
+}
+
+.nav a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #9E9E9E;
+  margin: 0px 0px;
+}
+
+.nav-link.active {
+  color: #94F4FF !important;
+  font-weight: 600;
+  background-color: unset !important;
+}
+
+.nav-link:hover {
+  color: unset !important;
+  font-weight: 600;
+}
+
+.close-btn {
+  border: none;
+  color: #010B29;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.sidebarToggle {
+  position: absolute;
+  width: unset;
+  background-color: #010B29;
+  border: 0px;
+  color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  z-index: 20;
+  top: 10px;
+  left: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 38px;
+  height: 38px;
+  border: unset;
+  border-radius: unset;
+  margin: unset;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* .sidebar {
+    width: 90%;
+    transform: translateX(-100%);
+    z-index: 25;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .close-btn {
+    display: block;
+  } */
+
+  .summary-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .summary-section h1 {
+    font-size: 80px;
+    top: 30px;
+  }
+
+  .summary-content {
+    flex-direction: column;
+    
+  }
+  .summary-left {
+    width: 100%;
+    text-align: left;
+  }
+  .summary-right {
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .experience-card {
+    padding: unset;
+  }
+
+  .certifications_skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certifications,.skills {
+    width: unset;
+
+  }
+  .skills{
+    margin-top: 10px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 60%;
+    transform: translateX(-100%);
+    z-index: 25;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .summary-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .summary-section h1 {
+    font-size: 60px;
+    top: 30px;
+  }
+
+  .summary-content {
+    flex-direction: column;
+    
+  }
+  .summary-left {
+    width: 100%;
+    text-align: left;
+  }
+  .summary-right {
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .experience-card {
+    padding: unset;
+  }
+
+  .certifications_skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certifications,.skills {
+    width: unset;
+
+  }
+  .skills{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sidebar {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .summary-section h1 {
+    font-size: 55px;
+    top: 35px;
+  }
+  .summary-section h2 {
+    font-size: 24px;
+  }
+  li {
+    font-size: 16px;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  .summary-section h1 {
+    font-size: 45px;
+    top: 35px;
+  }
+  .summary-section h2 {
+    font-size: 20px;
+  }
+  li {
+    font-size: 12px;
+  }
+  
+}
+
+
+
