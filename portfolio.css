@@ -110,6 +110,7 @@ body {
 .summary-left {
   width: 70%;
   text-align: left;
+  word-break: break-all
 }
 
 .summary-left p {
@@ -343,6 +344,7 @@ footer {
   .summary-left {
     width: 100%;
     text-align: left;
+    
   }
   .summary-right {
     width: 100%;
