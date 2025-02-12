@@ -40,7 +40,25 @@ navLinks.forEach((link) => {
 document
   .getElementById("downloadBtn")
   .addEventListener("click", async function () {
-    const response = await fetch("./cv/cv.pdf"); // Replace with actual URL
+    const response = await fetch("./cv/cv.pdf");
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "kavyajna-sr-ux-designer-cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+
+    // Cleanup
+    window.URL.revokeObjectURL(url);
+    document.body.removeChild(link);
+  });
+
+document
+  .getElementById("downloadBtn_1")
+  .addEventListener("click", async function () {
+    const response = await fetch("./cv/cv.pdf");
     const blob = await response.blob();
     const url = window.URL.createObjectURL(blob);
 
