@@ -279,14 +279,14 @@ footer {
   display: none;
   background-color: #fff;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
 }
 
 .close-btn img {
-  width: 36px;
-  height: 36px;
-  margin-left: -6px;
+  width: 30px;
+  height: 30px;
+  transform: translateX(-20%);
 }
 
 .sidebarToggle {
